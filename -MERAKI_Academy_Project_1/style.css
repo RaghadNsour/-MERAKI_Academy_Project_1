@@ -1,0 +1,390 @@
+
+body{
+    background-image: url("./images/yay.avif");
+    background-size:cover;
+          height: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    
+
+   
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      
+
+
+
+
+
+    #start-game h2{
+        font-size: 60px;
+        font-family: cursive;
+        color:bisque;;
+        text-align: center;
+        border-style:dotted ;
+        border-width: 10px;
+        border-color:#fa6661;
+        margin-top: 200px;
+        border-radius: 25%;
+        overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40) ;
+    }
+    
+    
+    #start-game button{
+    padding:0.2%;
+    font-size:10px;
+    border-color: bisque;
+    margin: 0 auto;
+    border-style:solid;
+    border-radius:50%;
+    background-color:bisque;
+    cursor:pointer;
+    display: block;
+    border-width: 1px;
+    margin-top: 40px;
+   
+   
+    }
+    
+    #start-game button:hover{
+        background-color: #f2e7e7;}
+    
+    
+    
+    
+    
+    
+    #game-container{
+    display: grid;
+    grid-template-columns: 3fr  1fr 4fr ;
+    margin-bottom: 20px;
+    gap: 30px;
+    
+    }
+    #boot-icon{
+ 
+         border-color: #fa6661;
+        background-color:bisque; 
+       border-width: 7px; 
+       background-color:aliceblue;
+       
+       margin-left:5px;
+       margin-top: 10px;
+   
+    
+    }
+    #boot-icon :hover{
+        background-color: #fa6661;
+
+    }
+    
+    #the-Display-Text{
+        font-size: 50px;
+        margin: 0 auto;
+       font-family: cursive;
+       color:#e22a24;
+
+    
+    
+    }
+    
+    #image-container {
+    position: absolute; 
+     bottom:28%;
+      left:95%; 
+      transform: translate(-90%, -10%);
+    }
+    
+       
+    
+    
+    #image-container img{
+       height:290px ;
+    width:290px;
+    }
+    
+    #text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        left:10%;
+        transform: translate(-50%, -50%)
+    }
+    
+    
+    
+    
+    #text-container h2 {
+        font-size: 50px;
+        font-family: cursive;
+        margin: 0 auto;
+        text-align: center;
+       
+    }
+    
+    #alphabet-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  
+     gap:5px;
+       justify-content: center;
+      align-items: center;
+      margin:  0 auto ;
+      text-align: center;
+    }
+    #alphabet-container button{
+     margin: 0.5px;
+    width: 40px;
+    height:40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+        color:#e22a24;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+      
+    }
+    
+     
+    #alphabet-container
+    button:hover {
+    background-color: #ee9898;
+    
+    }
+    
+    #alphabetCount {
+    
+        font-size:19px;
+    margin: 10px auto;
+    
+       font-family: cursive;
+       background-color:aliceblue;
+       background-size: contain;
+       color:#e22a24;
+    text-align: center;
+    position: absolute;
+     bottom: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      width: 350px;
+    
+    }
+    
+    #hint-container p {
+        font:  16px;
+       font-family: cursive;
+       background-color:aliceblue;
+       color:#e22a24;
+    position: absolute;
+     bottom: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+         width: 500px;
+     
+    }
+
+    
+    
+    #result-container h2{
+      margin-top: 200px;
+      font-size: 60px;
+      font-family: cursive;
+      color:bisque;;
+      text-align: center;
+      border-style:dotted ;
+      border-width: 10px;
+      border-color:#fa6661;
+      margin-top: 200px;
+      border-radius: 25%;
+      overflow: hidden;
+white-space: nowrap;
+animation: typing 2s steps(40) ;
+    }
+    
+    #result-container button 
+    {padding:3%;
+    font-size: 20px;
+    padding:0.2%;
+    font-size:10px;
+    border-color: bisque;
+    margin: 0 auto;
+    border-style:solid;
+    border-radius:50%;
+    background-color:bisque;
+    cursor:pointer;
+    display: block;
+    border-width: 1px;
+    margin-top: 40px;
+    }
+    
+    #result-container button:hover
+    {
+        background-color: #f2e7e7;
+    }
+    
+    @media screen and (max-width:400px){
+        
+    body{
+    
+        overflow-y: hidden;
+        overflow-x: hidden;
+      
+    }
+    
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 50%;
+        }
+      }
+
+    
+        #start-game h2{
+            font-size:20px;
+            font-family: cursive;
+            color:bisque;
+            text-align: center;
+            margin-top: 200px;
+            animation: typing 2s steps(60) 
+        }
+        #boot-icon{
+            border-radius: 20%;
+            border-color: #fa6661;
+            background-color:bisque;
+           border-width:5px;
+           margin-top: 10px;
+           margin-left:5px;
+           
+        
+        
+        }
+        #game-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 100%;
+        }
+            
+        #start-game button{
+            font-size:13px;
+            border-width: 5px;
+            border-color: #fa6661;
+            margin: 0 auto;
+            border-style:solid;
+            border-radius:50%;
+            background-color:bisque;
+            cursor:pointer;
+            display: block;
+            border-width: 7px;
+            
+            }
+            #the-Display-Text{
+                font-size:25px;
+                margin: 10 auto;
+               font-family: cursive;
+               color:#e22a24;
+               margin-top: 20px;
+               margin-left:30px;
+               
+               
+               
+            
+            }
+            #alphabet-container button{
+               width:24px;
+               height:24px;
+               font-size: 15px;
+               font-weight: bold;
+               text-align: center;
+                   color:#e22a24;
+                   border: none;
+                   border-radius: 50%;
+                   cursor: pointer;
+                   
+                 
+               }
+               #image-container {
+            position: absolute; 
+             bottom:25%;
+              left:50%; 
+              transform: translate(-50%, -50%);
+            }
+            
+               
+            
+            
+            #image-container img{
+               height:160px;
+            width: 160px;
+            }
+            
+            
+            
+            #alphabetCount {
+    
+                font-size:15px;
+            margin: 10px auto;
+            
+               font-family: cursive;
+               background-color:bisque;
+               background-size: contain;
+               color:#e22a24;
+            text-align: center;
+            position: absolute;
+             bottom:10%;
+              left: 50%;
+              transform: translate(-50%, -50%); 
+            
+            }
+            #hint-container p {
+                font:  16px;
+            
+               font-family: cursive;
+               background-color:bisque;
+               color:#e22a24;
+            position: absolute;
+             bottom: 0.0001%;
+              left: 50%;
+              transform: translate(-50%, -50%); 
+              width:300px;
+            }
+    
+            
+    #result-container h2{
+        font-size:20px;
+        font-family: cursive;
+        color:bisque;
+        border-style: dotted;
+        border-width: 10px;
+        border-color:#fa6661;
+        text-align: center;
+      margin-top: 180px;
+    }
+    
+    #result-container button 
+    {font-size:13px;
+        border-width: 5px;
+        border-color: #fa6661;
+        margin: 0 auto;
+        border-style:solid;
+        border-radius:50%;
+        background-color:bisque;
+        cursor:pointer;
+        display: block;
+        border-width: 7px;
+    }
+        }
